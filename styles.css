@@ -11,6 +11,8 @@
   --header-bg-color: green;
   --main-bg-color: gray;
   --highlight-color: #f6fdc3;
+  --secondary-text: rgb(171, 128, 209);
+  --primary-text: rgb(92, 92, 92);
 }
 
 body {
@@ -20,6 +22,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Quicksand', sans-serif;
+  color: var(--primary-text);
 }
 
 header {
@@ -61,6 +64,11 @@ h1 {
   line-height: 54px;
 }
 
+h2 {
+  color: var(--secondary-text);
+  font-size: 28px;
+}
+
 header span {
   display: inline-block;
   font-size: 75px;
@@ -72,6 +80,16 @@ header span {
 
 main {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  font-size: 16px;
+}
+
+main .about {
+  background: rgb(171, 128, 209, 0.2);
+  padding: 24px;
 }
 
 @media only screen and (max-width: 720px) {

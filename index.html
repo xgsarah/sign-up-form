@@ -3,12 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-up Form</title>
+    <title>Hush Hush Kpop | Sign-up Form</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    sign up form
+    <header>
+      <div class="title">
+        <h1>Hush Hush <span>Kpop</span></h1>
+      </div>
+      <div class="photo-credits">
+        Photo by
+        <a
+          href="https://unsplash.com/@maxberg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Maxim Berg</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/a-heart-shaped-object-with-a-pink-and-blue-swirl-nazL_0vWZ0Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h2>Join the Kpop Underground!</h2>
+        <p>
+          Welcome, fellow Kpop enthusiast! You've stumbled upon the secret
+          signup page for the most exclusive Kpop organization known to
+          humanity. Prepare yourself to dive deep into the world of synchronized
+          dance moves, catchy tunes, and heart-fluttering visuals!
+        </p>
+
+        <p>
+          Here at the Secret Kpop Organization, we're more than just fans. We're
+          connoisseurs of the perfectly timed fan chant, masters of the
+          bias-wrecking moment, and guardians of the ultimate ship. If you're
+          ready to take your love for Kpop to the next level, then you're in the
+          right place!
+        </p>
+
+        <p>
+          But before you proceed, a word of caution:
+          <em>secrecy is paramount</em>. Our existence is known only to the most
+          dedicated fans, and discretion is key.
+        </p>
+      </section>
+      <section class="form">
+        <h2>Fill out the form below and let the journey begin!</h2>
+        <form action="#" method="post">
+          <div class="input-fields">
+            <div class="name">
+              <label
+                >First Name
+                <input type="text" id="first-name" name="first-name"
+              /></label>
+              <label
+                >Last Name <input type="text" id="last-name" name="last-name"
+              /></label>
+            </div>
+            <div class="contact">
+              <label
+                >Email <input type="email" id="email" name="email"
+              /></label>
+              <label
+                >Phone Number <input type="text" id="phone" name="phone"
+              /></label>
+            </div>
+            <div class="password">
+              <label
+                >Password <input type="text" id="password" name="password"
+              /></label>
+              <label
+                >Confirm Password
+                <input
+                  type="text"
+                  id="confirm-password"
+                  name="confirm-password"
+              /></label>
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+        <section>
+          Already have an account? <button class="login-btn">Log in</button>
+        </section>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

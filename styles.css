@@ -8,8 +8,8 @@
 
 :root {
   --bg-color: #ffff;
-  --header-bg-color: green;
-  --main-bg-color: gray;
+  --header-bg-color: rgb(255, 255, 255);
+  --main-bg-color: rgb(255, 255, 255);
   --highlight-color: #f6fdc3;
   --secondary-text: rgb(171, 128, 209);
   --primary-text: rgb(92, 92, 92);

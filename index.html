@@ -55,44 +55,68 @@
       <section class="form">
         <div class="container">
           <h2>Fill out the form below and let the journey begin!</h2>
-          <form action="#" method="post">
+          <form action="#" method="post" autocomplete="off">
             <div class="input-fields">
               <div class="name">
                 <label
                   ><span>First Name *</span>
-                  <input type="text" id="first-name" name="first-name"
-                /></label>
+                  <input
+                    autofocus
+                    required
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                  />
+                  <span class="helper-text">First name is required</span>
+                </label>
                 <label
                   ><span>Last Name *</span>
-                  <input type="text" id="last-name" name="last-name"
-                /></label>
+                  <input type="text" required id="last-name" name="last-name" />
+                  <span class="helper-text">Last name is required</span>
+                </label>
               </div>
               <div class="contact">
                 <label
                   ><span>Email *</span>
-                  <input type="email" id="email" name="email"
-                /></label>
+                  <input type="email" required id="email" name="email" />
+                  <span class="helper-text">Email is required</span></label
+                >
                 <label
-                  ><span>Phone Number</span>
-                  <input type="text" id="phone" name="phone"
-                /></label>
+                  ><span>Phone Number *</span>
+                  <input type="text" required id="phone" name="phone" />
+                  <span class="helper-text"
+                    >Phone number is required</span
+                  ></label
+                >
               </div>
 
               <div class="password">
-                <label
+                <label id="password"
                   ><span>Password *</span>
-                  <input type="text" id="password" name="password"
-                /></label>
-                <label
-                  ><span>Confirm Password *</span>
                   <input
                     type="text"
-                    id="confirm-password"
+                    class="password-input"
+                    required
+                    name="password"
+                  />
+                  <span class="helper-text">Password is required</span>
+                </label>
+                <label id="confirm-password"
+                  ><span>Confirm Password *</span>
+                  <input
+                    class="confirm-password-input"
+                    type="text"
                     name="confirm-password"
-                /></label>
+                    required
+                  /><span class="helper-text"
+                    >Confirm Password doesn't match with your Password</span
+                  ></label
+                >
               </div>
             </div>
-            <button class="submit-btn" type="submit">Create Account</button>
+            <button class="submit-btn" type="submit" disabled>
+              Create Account
+            </button>
           </form>
           <section>
             Already have an account? <button class="login-btn">Log in</button>
